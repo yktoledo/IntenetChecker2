@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">InternetChecker2</string>
+    <string name="notification_title">Atention!!</string>
+    <string name="notification_content">Internet ready</string>
+    <string name="check_every">Check every &#160;</string>
+    <string name="seconds">&#160; seconds</string>
+    <string name="notification">Notification</string>
+    <string name="play_music">Play Music</string>
+    <string name="default_str">Default</string>
+    <string name="start_checking">Start Checking</string>
+    <string name="no_internet">No Internet</string>
+    <string name="state">State</string>
+    <string name="checking_on">Checking On</string>
+    <string name="checking_off">Checking Off</string>
+    <string name="internet_ready">Internet Ready!!</string>
+    <string name="updating">Updating...</string>
+    <string name="foreground_info_text">Foreground service drain your battery faster.</string>
+</resources>

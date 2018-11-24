@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="notification_background">#16ff00</color>
+    <color name="layout_background_border">#b4b4b4</color>
+    <color name="red">#f11e1e</color>
+    <color name="gray">#a7a5a5</color>
+    <color name="foreground_info_background_color">#636262</color>
+    <color name="green">#4d892d</color>
+    <color name="widget_back">#e9e5e5</color>
+</resources>

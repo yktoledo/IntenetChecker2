@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/txt_state_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/state"
+                android:textColor="@color/gray"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/switcher_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_state_container"
+            android:layout_marginTop="40dp">
+
+            <ImageSwitcher
+                android:id="@+id/switcher"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true" />
+
+            <com.github.rahatarmanahmed.cpv.CircularProgressView
+                android:id="@+id/progress_view"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                app:cpv_animAutostart="true"
+                app:cpv_color="@color/gray"
+                app:cpv_indeterminate="true"
+                app:cpv_thickness="3dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_internet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switcher_container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/updating"
+            android:textColor="@color/gray"
+            android:textSize="24sp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/ring_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_internet"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/play_music"
+            android:theme="@style/SCBSwitch" />
+
+        <LinearLayout
+            android:id="@+id/foreground_service_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ring_switch"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_marginEnd="10dp"
+                android:id="@+id/foreground_info"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_warning_black_24dp" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/foreground_service_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Foreground Service"
+                android:theme="@style/SCBSwitch" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

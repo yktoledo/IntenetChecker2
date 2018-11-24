@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">InternetCheck</string>
+    <string name="notification_title">Atención!!</string>
+    <string name="notification_content">Internet listo</string>
+    <string name="check_every">Verificar cada &#160; </string>
+    <string name="seconds">&#160; segundos</string>
+    <string name="notification">Notificación</string>
+    <string name="play_music">Música</string>
+    <string name="default_str">Por defecto</string>
+    <string name="start_checking">Comenzar</string>
+    <string name="no_internet">No Internet</string>
+    <string name="state">State</string>
+    <string name="checking_on">Chequeando</string>
+    <string name="checking_off">No Chequeando</string>
+    <string name="internet_ready">Internet!!</string>
+    <string name="updating">Actualizando…</string>
+    <string name="foreground_info_text">El uso de este servicio consume tu bateria rapidamente.</string>
+</resources>
